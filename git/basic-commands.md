@@ -8,3 +8,6 @@ There are several basic git commands we should know.
 5. `git checkout -b "[branch name]"` : create a branch, and shift to that branch.
 6. `git log` : shows log of your git activity.
 7. `git reset HEAD [id]` : you can reset your git status to the point of the id.
+8. `git checkout [HASH]` : lets you observe the files at that specific log time.
+9. `git merge [branch]` : merge the other branch into current branch.
+10. `git merge --abort` : aborts your merge when it has conflicted.
