@@ -146,11 +146,69 @@ numberArray.reduce(function(prevValue, currentValue, currentIndex, arr), initial
 ```
 
 ### Searching and Sorting
+1) `reverse()` : literally reverses the order of elements.
+
+2) `sort()` : sorts elements of an array. This sort is *lexicographic*, which means `by string`, not `by numbers`.
+
+If we want our `sort()` to sort *numerically*, we need to pass another function to the `sort()` function. This is called `compareFunction`.
+
+> array.sort(compareFunction)
+
+To sort with ascending order:
+```
+numberArray.sort(function(a,b){
+  return a-b;
+});
+>> [1, 2, 3, 4, 5, 6, 7, 8, 9, 10]
+```
+To sort with descending order:
+```
+numberArray.sort(function(a,b){
+  return b-a;
+});
+>> [10, 9, 8, 7, 6, 5, 4, 3, 2, 1]
+```
 
 * Custom sorting
 
+We can use `compareFunction` to compare any type of elements as we define.
+```
+var petAge = [
+  {name: '치즈', weight : 2},
+  {name: '봉구', weight : 1.8},
+  {name: '루루', weight : 2.2},
+];
+
+function compareWeight(a,b) {
+  return a.weight - b.weight;
+}
+
+console.log(petAge.sort(compareWeight));
+>>봉구 - 치즈 - 루루
+```
+
 * Sorting string
+
+`sort()` will sort strings according to `ASCII` value.
+
+But sometimes, you would want them to be ordered with different ordering rule.
+
+```
+// ignore cases
+function ignoreCase(a,b){
+  a.toLowerCase() - b.toLowerCase;
+}
+```
 
 * Searching
 
+1) `indexOf()` : first match
+
+2) `lastIndexOf()` : last match
+
+
 ### Outputting the array into a string
+
+1) `toString()` : convert array to string, with `,` separator.
+
+2) `join()` : do the same thing with `toString()`, but with given separator.
