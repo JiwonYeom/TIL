@@ -87,25 +87,25 @@ function Queue(){
 
     // add item to the back
     this.enqueue = function(elements){
-
+        items.push(elements);
     }
 
     // remove item from the front. returns the item.
     this.dequeue = function(){
-
+        return items.shift();
     }
 
     // return the first item from the queue -- similar to peek
     this.front = function(){
-
+        return items[0];
     }
 
     this.isEmpty = function(){
-
+        return items.length == 0;
     }
 
     this.size() = function(){
-
+        return items.length;
     }
 }
 ```
