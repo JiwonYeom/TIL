@@ -2,9 +2,7 @@
 * Keywords
 > **LIFO**
 
-#### Methods to Implement
-
-* Stack class implementation
+#### Stack class implementation
 
 ```JavaScript
 function Stack(){
@@ -54,7 +52,7 @@ stack.peek();
 stack.isEmpty();
 //...
 ```
-* Using Stack to convert decimal to binary
+#### Using Stack to convert decimal to binary
 ```JavaScript
 function baseConverter(decNumber, base){
     var remStack = new Stack(),
@@ -80,3 +78,34 @@ function baseConverter(decNumber, base){
 # DS in JavaScript (3) QUEUE
 * Keywords
 > **FIFO**
+
+#### Queue class implementation
+
+```JavaScript
+function Queue(){
+    var items = [];
+
+    // add item to the back
+    this.enqueue = function(elements){
+
+    }
+
+    // remove item from the front. returns the item.
+    this.dequeue = function(){
+
+    }
+
+    // return the first item from the queue -- similar to peek
+    this.front = function(){
+
+    }
+
+    this.isEmpty = function(){
+
+    }
+
+    this.size() = function(){
+
+    }
+}
+```
