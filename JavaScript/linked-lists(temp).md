@@ -11,7 +11,7 @@ Linked Lists are different from arrays in a sense that
 
 3) No need to shift elements around when adding / removing.
 
-4) We need pointers.
+4) Need pointers.
 
 5) In order to access an element from middle, need to start from beginning (`head`) and iterate.
 
