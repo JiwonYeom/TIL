@@ -38,17 +38,42 @@ function LinkedList(){
 append:
 ```JavaScript
 this.append = function(element){
+    //node has element and next
     var node = new Node(element),
-    current;
-    if (head === null){ 
-        head = node;
-    } else {
+    current;  // what kind of expression is this?
+    if (head === null){   // if head was never reassigned
+        head = node;    // assign node to head
+    } else {  // if head was already assigned
         current = head;
-        while(current.next){
-            current = current.next;
+        while(current.next){  //iterate until current.next is null
+            current = current.next;   //move pointer to next
         }
-        current.next = node;
+        current.next = node;  //assign node to next
     }
     length++;
+};
+```
+
+remove:
+```JavaScript
+this.removeAt = function(position){
+  if (position > -1 && position < length){
+    var current = head,
+    previous,
+    index = 0;
+  if (position === 0){
+    head = current.next;
+  } else {
+    while (index++ < position){
+      previous = current;
+      current = current.next;
+    }
+    previous.next = current.next;
+  }
+    length--;
+    return current.element;
+  } else {
+    return null;
+  }
 };
 ```
