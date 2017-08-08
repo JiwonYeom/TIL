@@ -22,7 +22,33 @@ new Set([iterable]);
 
 1. Set.length ( == 0)
 2. get Set[@@species] : constructor function that is used to create objects
+
+
+```JavaScript
+class MySet extends Set{
+  // Overwrite Myset soecies to the parent Set constructor
+  static get [Symbol.species]() { return Set; }
+}
+```
+
 3. Set.prototype : represents prototype for `Set` constructor. Allows addition to all `Set` objects.
+
+
+**Properties**
+
+1.Set.prototype.constructor : Returns function that created an instance's prototype.
+
+2.Set.prototype.size : Returns number of values in Set object.
+
+**Methods**
+
+1.`Set.prototype.add(value)` :  appends a new element to the `Set` object and returns it.
+
+2.`Set.prototype.clear()` : removes all elements from the `Set` object.
+
+3.`Set.prototype.delete(value)` : Removes the element of `value`, returns what *would* have been returned by `Set.prototype.has(value)` previously. `Set.prototype.has(value)` will return `false` afterwards.
+
+
 
 #### Instances
 
