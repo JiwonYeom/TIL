@@ -48,7 +48,13 @@ class MySet extends Set{
 
 3.`Set.prototype.delete(value)` : Removes the element of `value`, returns what *would* have been returned by `Set.prototype.has(value)` previously. `Set.prototype.has(value)` will return `false` afterwards.
 
+4.`Set.prototype.entries()` : Returns iterator object that contains an array of [value, value] for each element in the Set object, in insertion order.
 
+5.`Set.prototype.forEach(callbackFn[, thisArg])` : Calls callbackFn for each value in Set object, in insertion order. If an argument is provided, used as this value in each callback.
+
+6.`Set.prototype.values()` : Returns new iterator object that contains values of each element in a set.
+
+7.`Set.prototype[@@iterator]()`: same with `Set.prototype.values()`
 
 #### Instances
 

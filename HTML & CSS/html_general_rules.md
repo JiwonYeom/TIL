@@ -32,4 +32,7 @@ reference: https://www.themelocation.com/best-html5-practices/
 `<figure>`
 `<figcaption>`
 
-(in progress)
+10) Use appropriate tag for purposes.
+
+- no decorating purposes.
+Do not use tags like `<big>`, `<center>`, `<strike>` - use CSS. These are deprecated.
