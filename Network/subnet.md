@@ -1,5 +1,12 @@
 ## Subnet Mask
 
+*Classful addressing definition*
+
+class A : 1~126
+class B : 128~191
+class C : 192~223
+
+
 How to make and locate subnets - credits to [this](https://www.youtube.com/watch?v=Ct4PU6CyvTQ&t=435s) course
 
 #### CIDR : Classless Inter-Domaining Routing
