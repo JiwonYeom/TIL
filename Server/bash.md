@@ -43,3 +43,33 @@ echo x  #how
 
 * 사전 정의 환경변수
 `$USER`, `$TERM`, `$PATH`, `$HOME`, `$SHELL`, `$MAIL`, `$HOSTNAME`
+
+* [Special Bash variables](http://tldp.org/LDP/Bash-Beginners-Guide/html/sect_03_02.html)
+(Will be completed later)
+
+| Character     | Def           |
+| ------------- |:-------------:|
+| $*      |  |
+| $@      |       |
+| $# |       |
+| $? |       |
+| $$ |       |
+| $! |       |
+| $# |       |
+| $_ |       ||
+
+
+* [Arithmetics](https://bash.cyberciti.biz/guide/Perform_arithmetic_operations)
+```BASH
+# contain within $(())
+echo $(( 5 + 5))
+x = 3
+y = 4
+result = $(( x + y ))
+echo "$x + $y = $result"
+```
+
+* Comparison
+
+
+* declaration
