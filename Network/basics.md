@@ -2,6 +2,9 @@
 
 credits go to [this site](https://opentutorials.org/course/1688/9483)
 
+#### Domain
+- IP 대신 기억하기 쉽도록 부여한 주소 패턴
+
 #### DNS
 
 ##### Name Server : Returns IP address for web addresses.
@@ -11,6 +14,8 @@ credits go to [this site](https://opentutorials.org/course/1688/9483)
 - 네임서버는 계층적임.
 
 - 여러개의 백업을 설정해서 하나가 다운되도 다른 서버로 연결 가능하게 설정해주고는 함
+
+- 도메인으로 접근되어 들어왔을 때, IP를 반환
 
 ##### IPv6
 
