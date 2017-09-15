@@ -13,7 +13,7 @@
 #### 2. CSS
 * Making HTML wrapper
     - HTML wrapper? used for 1) *Relatively* positioning HTML elements 2) Position element within a section
-    - use mixes.
+    - use mixes. Mixes allows combining behavior and styles of multiple entities.
     - create additional block element
     - no additional abstract wrapper.
 
@@ -32,5 +32,7 @@
     padding-top: 10px;
 }
 ```
-
 > +Paddings/margins to top / to bottom is often defined since it is not affected by responsiveness to a great degree, but horizontal padding / margin should be rethought before use.
+
+
+* Selectors

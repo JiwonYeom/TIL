@@ -6,7 +6,7 @@
 
 * **Pandas** : Stores data with *Dataframe* (Two-dimensional labeled data structure).
 
-Pandas Syntax (simple creation of d)
+Pandas Syntax (simple creation of df)
 ```Python2
 from pandas import DataFrame, Series
 
