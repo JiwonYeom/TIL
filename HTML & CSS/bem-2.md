@@ -33,6 +33,3 @@
 }
 ```
 > +Paddings/margins to top / to bottom is often defined since it is not affected by responsiveness to a great degree, but horizontal padding / margin should be rethought before use.
-
-
-* Selectors

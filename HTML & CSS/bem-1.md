@@ -57,9 +57,3 @@ Reference to [here](https://en.bem.info/methodology/quick-start/)
 
 ##### 6. BEM tree
 * DOM tree written in BEM entities
-
-##### 7. Block implementation
-
-##### 8. Block implementation technology
-##### 9. Block redefinition
-##### 10. Redefinition level
