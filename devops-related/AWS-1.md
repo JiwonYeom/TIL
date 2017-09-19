@@ -12,6 +12,7 @@
 
 #### RDS
 * AWS 상에서 제공되는 Database. MySQL, PostgreSQL, Oracle 등등 Aurora라는 자체 DB도 제공한다.
+* Security Group 을 세팅할때는 MySQL용 규칙을 별도로 추가해 주어야 한다
 
 #### S3
 * 정적인 데이터를 저장하는 저장소. 필요에 따라 다른 plan을 선택해서 과금 정도를 최적화 할 수 있다.

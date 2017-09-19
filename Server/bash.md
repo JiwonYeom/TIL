@@ -26,6 +26,9 @@ Using this, you can add hello message for when bash opens too :)
 echo "hi!"
 ```
 
+* Scope of variables: they do not have to be declared. Which means, if undeclared variable is called, it wouldn't cause any error - it will call an empty string.
+
+
 #### shell script grammars
 [reference](http://egaoneko.github.io/os/2015/05/24/linux-starter-guide-8.html)
 
