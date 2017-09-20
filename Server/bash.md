@@ -28,7 +28,6 @@ echo "hi!"
 
 * Scope of variables: they do not have to be declared. Which means, if undeclared variable is called, it wouldn't cause any error - it will call an empty string.
 
-
 #### shell script grammars
 [reference](http://egaoneko.github.io/os/2015/05/24/linux-starter-guide-8.html)
 
@@ -71,6 +70,12 @@ y = 4
 result = $(( x + y ))
 echo "$x + $y = $result"
 ```
+
+* Test
+- `[` is a symbolic link to `test` in shell script.
+- Even though this is used as if syntax character, since it is actually a program, it must be surrounded by spaces to properly work.
+- most often used in `if` and `while` statements
+
 
 * Comparison
 
