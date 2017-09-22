@@ -46,6 +46,18 @@ sudo service nginx reload
 sudo vi /etc/php.ini  # date.timezone = [your timezone]
 sudo service nginx reload
 sudo service nginx restart
+
+# mysql
+sudo yum install -y mysql56-server
+sudo service mysqld start
+sudo mysql_secure_installation
+
+# set restart when server goes off & on
+sudo chkconfig nginx on
+sudo chkconfig php-fpm on
+sudo chkconfig mysqld on
+sudo chkconfig mysqld on
+
 ```
 
 your nginx.conf settings:
