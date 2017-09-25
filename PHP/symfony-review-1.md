@@ -39,6 +39,9 @@ I'm not sure if this is something that I must do every time I do some changes. T
 * Debugging
 It said debugging toolbar should show up, but I haven't seen it yet :(
 I think I might have set up something wrong, and trying to figure this out.
+**update!**
+==> I found this out. My website seems like it's on a production mode instead of development mode. I accessed app_dev.php by explicitly using its url, and the bar showed up.
+I think this is because of my web server setting, which is not the built-in php server. I'll have to check up a bit more.
 
 * Dev & Prod
 I think Symfony divides these two quite strictly. I'm still trying to find out the exact mechanism, but there are two files -`app.php` and `app_dev.php`. While I was setting up `nginx.conf`, it also separated these two environments, which is good. But I should take more in-depth look to see exact settings and usages.
