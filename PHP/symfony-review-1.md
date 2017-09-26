@@ -45,3 +45,7 @@ I think this is because of my web server setting, which is not the built-in php 
 
 * Dev & Prod
 I think Symfony divides these two quite strictly. I'm still trying to find out the exact mechanism, but there are two files -`app.php` and `app_dev.php`. While I was setting up `nginx.conf`, it also separated these two environments, which is good. But I should take more in-depth look to see exact settings and usages.
+
+* Memory issue
+While I was trying to install FOS\\rest-bundle, I encountered memory issue. Allocated memory exceeded, so I tried to increase the `memory_limit` parameter in `php.ini` file to 1G, but it didn't work.
+I though there might be another issue, but today I tried it again by putting `-1` as its value. As a result, the memory alert was gone but now I had allocation exception in `Composer`. This was solved after I entered few commands suggested [here](https://getcomposer.org/doc/articles/troubleshooting.md#proc-open-fork-failed-errors)
