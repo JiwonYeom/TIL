@@ -31,7 +31,7 @@ class Someclass {
 
         public function __construct($params)
         {
-                // Do something with $params
+            // Do something with $params
         }
 }
 ```
