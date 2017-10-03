@@ -11,6 +11,16 @@ Should be enough to create your new project. Do NOT forget to change your root i
 #### The console
 Symfony can be managed by its own console and its commands, such as running its server or checking status, etc.
 
+* Useful commands
+```
+//check routed url list
+php bin/console debug:router
+
+//refresh cache
+ php bin/console cache:clear --env=prod
+
+```
+
 #### File Directory
 * src-AppBundle contains Controller.
 * Resources-views contains view files.
