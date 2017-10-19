@@ -16,3 +16,7 @@ https://hackernoon.com/a-crash-course-on-serverless-with-node-js-632b37d58b44
 - Why code ownership sucks and you should never work somewhere that practices it https://medium.freecodecamp.org/why-code-ownership-sucks-and-you-should-never-work-somewhere-that-practices-it-b8fc1c694074
 - We fired our top talent. Best decision we ever made.
 https://medium.freecodecamp.org/we-fired-our-top-talent-best-decision-we-ever-made-4c0a99728fde
+
+#### 20171019
+- A Beginner-Friendly Introduction to Containers, VMs and Docker
+https://medium.freecodecamp.org/a-beginner-friendly-introduction-to-containers-vms-and-docker-79a9e3e119b
