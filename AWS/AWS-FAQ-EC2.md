@@ -46,5 +46,35 @@ Studying for AWS Certified SAA. Summaries on parts that I didn't know + likely i
     * M3 : more consistence, SSD-based instance storage, higher I/O, less expensive. Recommended for genera purpose, balance of compute, memory, network resources.
     * M1 for more disk storage
 
+* EC2 Compute Unit
+    * Amount of CPU that is allocated to a particular instance. ECU provides relative measure of the integer processing power of an EC2 instance.
+
+* Getting historyof all EC2API calls made on my account for security analysis & operational troubleshootings : turnon `CloudTrail` in AWS console.
+
+* 5 EIP per region. To increase, make special request.
+
+* Configureing reverse DNS record for EIP : fill out form. Notethat DNS record must exist BEFORE they create the reverse DNS record.
+> Reverse DNS record : opposite of DNS. maps IP to a domain name. https://www.itworld.com/article/2833006/networking/how-to-setup-reverse-dns-and-ptr-records.html
+
+* Can I make sure I'm in the same AZ as another dev? Currently not supported. One AZ name in two AWS customer accounts may relate to different physical AZ
+
+* transfer data between AZ using public IP --> twice for Regional Data Transfer + public IP? : no. Regional Data Transfer rates once even if both conditions apply
+
+* Networking Capabilities : `SR-IOV`
+
+* Enhanced networking could be useful when high packet-per-second performance, low latency networking
+
+* How to enable : launch HVM AMI. 
+    * R4, X1, I3, P2, G3, m4.16xlarge instances provide Elastic Network Adapter (ENA) interface.
+    * C3, C4, R3, I2, M4, D2 : Intel® 82599g Virtual Function Interface
+    * Amazon Linnux AMI includes both of these drivers by default. 
+    * If not included, download & install. 
+    * **Enhanced networking is only supported in Amazon VPC**
+
+* No additional fee for enhanced networking.
+
+* EBS volume : SSD backed(transactional) / HDD backed (intensive)
+
+
 
 

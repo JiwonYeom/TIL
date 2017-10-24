@@ -20,3 +20,11 @@ https://medium.freecodecamp.org/we-fired-our-top-talent-best-decision-we-ever-ma
 #### 20171019
 - A Beginner-Friendly Introduction to Containers, VMs and Docker
 https://medium.freecodecamp.org/a-beginner-friendly-introduction-to-containers-vms-and-docker-79a9e3e119b
+
+#### 20171023
+- :star2: Translated `Granular Application Architecture Patterns` :
+https://medium.com/@jwyeom63/%EC%84%B8%EB%B6%84%ED%99%94-granular-%EC%95%A0%ED%94%8C%EB%A6%AC%EC%BC%80%EC%9D%B4%EC%85%98-%EC%95%84%ED%82%A4%ED%85%8D%EC%B2%98-%ED%8C%A8%ED%84%B4-1f6a2d720545
+
+#### 20171024
+- How we deliver BBC Web Pages to the Internet : https://medium.com/bbc-design-engineering/how-we-deliver-bbc-web-pages-to-the-internet-9b72f48f857c
+- The Path to Becoming a Software Architect : https://medium.com/@nvashanin/the-path-to-becoming-a-software-architect-de53f1cb310a
