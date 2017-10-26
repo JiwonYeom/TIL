@@ -33,3 +33,31 @@ Studying for AWS Certified SAA. Summaries on parts that I didn't know + likely i
 * Data access auditing is supported (optional)
 
 * Options for encrypting : SSE-S3, SSE-C, SSE-KMS, or a client library such as the Amazon S3 Encryption Client.
+
+* VPC Endpoint for S3 : logical entity withiin VPC that allows connectivity only to S3. Routes requests to S4 and responses back to VPC.
+
+* Amazon Macie: AI-powered security service. Machine-learning. 
+
+* Durability
+    - Standard - IA : 99.999999999% durability
+    - Amazon S3 Standard & Standard - IA redundantly stores objects on multiple devices across multiple facilities.
+
+* S3 checksums : Content-MD5 checksum & cyclic redundancy checks (CRCs)
+
+* Versioning - preserves existing objects for every PUT, POST, COPY, DELETE operation.
+
+* Lifecycle rule setting + versioning alllows rollback for S3.
+
+* Versioning charges :every version of an object stored / requested.
+
+* Retrieval option for objects in Amazon Glacier : Expedited, Standard, Bulk retrievals
+
+* Retrieve 10 GB Glacider per month for free.
+
+* S3 event notifications : 
+    - set up triggers to perform actions including transcoding media files when they are uploaded
+    - processing data files when they become available
+    - synchronizing Amazon S3 objects with other data stores
+    - set up event notifications based on object name prefixes and suffixes
+
+#### Storage Management
