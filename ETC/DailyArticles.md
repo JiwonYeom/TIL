@@ -28,3 +28,9 @@ https://medium.com/@jwyeom63/%EC%84%B8%EB%B6%84%ED%99%94-granular-%EC%95%A0%ED%9
 #### 20171024
 - How we deliver BBC Web Pages to the Internet : https://medium.com/bbc-design-engineering/how-we-deliver-bbc-web-pages-to-the-internet-9b72f48f857c
 - The Path to Becoming a Software Architect : https://medium.com/@nvashanin/the-path-to-becoming-a-software-architect-de53f1cb310a
+
+#### 20171026
+- What Happens When You Want to Retire from GitHub : https://medium.com/@heatherarthur/what-happens-when-you-retire-from-github-979fb6b143b3
+- The Web Fundamentals Gap :
+https://codeburst.io/the-web-fundamentals-gap-bb8f7fba29c6
+

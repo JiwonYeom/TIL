@@ -30,8 +30,9 @@ Studying for AWS Certified SAA. Summaries on parts that I didn't know + likely i
 * When two instances in different AZ communicate, if data is transferred BETWEEN two instances, charged as Out & In.
 
 * Prices include tax? No.
-    * 5 families of EC2 instances :
-        * General Purpose : have memory to CPU ratios suitable for most general purpose applications and come with fixed performance (M4 and M3 instances) or burstable performance (T2)
+
+* 5 families of EC2 instances :
+    * General Purpose : have memory to CPU ratios suitable for most general purpose applications and come with fixed performance (M4 and M3 instances) or burstable performance (T2)
         * M4,M3,T2
     * Compute Optimized : (C4 and C3 instances) have proportionally more CPU resources than memory (RAM) and are well suited for scale out compute-intensive applications and High Performance Computing (HPC) workloads
         * C4,C3   
@@ -73,8 +74,61 @@ Studying for AWS Certified SAA. Summaries on parts that I didn't know + likely i
 
 * No additional fee for enhanced networking.
 
+##### EBS
+
 * EBS volume : SSD backed(transactional) / HDD backed (intensive)
 
+* When using ebs as a root partition, set the Delete On Terminate to "N" to persist.
+
+* EBS snapshots are only available through EC2 APIs
+
+* No need to unmount volumes to take snapshot. But this might exclude local caches. Cleanly detach the volume in order to prevent it.
+
+* Snapshots are given unique identifier.
+
+* shared snapshots no extra charge, cpy of another user's shared volume -> EBS charge
+
+* EBS offers encryption of data volumes and snapshots
+
+* IOPS volume - IOPS maximum 50:1 size. Min 100 IOPS, max 20000 IOPS
+
+* EBS volume to other instance in another AZ : snapshot ->create volume
+
+##### CloudWatch
+
+* Minimum time interval granularity : 1 minute
+
+* disable monitoring -> metrics data can be retrieved as far as 2 weeks. After that data won't be available is the monitoring was diabled.
+
+* terminated EC2 instance or deleted ELB can be accessed
+
+* Custom metric can provide data at at granularity of one second
+
+* Custom metric cane be either standard or high resolution.
+
+* High resolution custom metrics are NOT priced differently from standartd metrics.
+
+* Availabled statistics : retrieve, graph, set alarms.... Average, Sum, Minimum, Maximum, Sample Count. 
+
+* CloudWatch Logs Agent sends data every 5 mins by default
+
+* CloudWatch Logs Agent formats in any text based common log data / JSON-formatted logs
+
+##### Auto Scaling
+
+* Auto scaling speed for upping / downing can be customized.
+
+* Delete auto scaling group -> instances wil be terminated & group will be deleted.
+
+##### ELB
+
+* Classic load balancer : routes based on appliation / network level information. Ideal for simple load ballancig between multiple EC2
+
+* Application load balancer : based on advanced application level information. Microservices, container-based architectures...
+
+##### ETC
+
+* non-production, can be interrupted : spot instance
 
 
 
