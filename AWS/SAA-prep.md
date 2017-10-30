@@ -33,3 +33,12 @@
 - Private IP address remains associated with the network interface when the instance is stopped / restarted but release then terminated.
 - You can encrypt connection between application and DB instance wth SSL
 - CloudFormation : model & set up resources for AWS resources to spend less time managing the resources and focus on applications. Create a template that describe all resources that you want and CloudFormation will provision & configure the resources.
+- Amazon EFS : Scalable file storage for use with Amazon EC2. Common data source / workloads / application running on multiple instances
+- Reserved Intances are available for Multi-AZ deployements, for all instance types
+- Choose Provisioned IOPS over Standard RDS storage if you use production online transaction processing (OLTP) workloads
+- You cannot use standby for read / write operation when running DB as a Multi-AZ deployment
+- IAM permissions : Identity-based & Resource-based. 
+- Auto Scaling determines whether there are instances in multiple Availability Zones. If so, it selects the Availability Zone with the most instances and at least one instance that is not protected from scale in.
+- EC2 instance in a VPC with an associated Elastic IP is stopped and started => All data on instance-store devices is lost & underlying host for the instance is changed
+- SWF : build, run, and scale background jobs that have parallel / sequential steps. Fully managed state tracker & tast coordinator
+    - video encoding, data center migration, product catalogs with human workers
