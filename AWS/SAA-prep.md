@@ -10,3 +10,26 @@
 - CloudWatch free tier - 5 mins
 - DB Parameter group : manage DB engine configuration. Container for engine configuration values. 
     - If dynamic parameter is changed and saved to the DB parameter group, it is applied immediately.
+- DynamoDB does not have maximum write throughput but needs request if 10000+
+- You should use IOPS over standard RDS storage if you have batch-oriented workloads
+- One-time payment for RIs are never refundable
+- When IAM user is deleted, password, access key, all inline policies, managed policies, and MFA devices will be deleted.
+- IAM features
+    - Granular permission
+    - Secure access to AWS resources for apps that run on EC2
+    - MFA
+    - Identity federation
+    - Identity information for assurance
+    - PCI DSS Compliance
+    - Eventually consistent
+    - Free to User
+- Maximum response time for Business level Premium Support case
+    - General guidance: 24 hrs
+    - System impaired: 12 hours
+    - Production system impaired: 4 hours
+    - Production system down: 1 hour
+- You cannot delete a snapshot of the root device of an EBS volume used by a registered AMI.
+- SNS topic creation => ARN creation
+- Private IP address remains associated with the network interface when the instance is stopped / restarted but release then terminated.
+- You can encrypt connection between application and DB instance wth SSL
+- CloudFormation : model & set up resources for AWS resources to spend less time managing the resources and focus on applications. Create a template that describe all resources that you want and CloudFormation will provision & configure the resources.
