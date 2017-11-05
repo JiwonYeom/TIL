@@ -18,3 +18,35 @@
     - An Amazon Route 53 CNAME record can point to any DNS record hosted anywhere.
 - If using RDS Provisioned IOPS storage, you can scale throughput by specifying IOPS rate from 1000 to 10000
 - ec2 placement group : logical grouping of instances within a single AZ. Recommended for applications that benefit from low network latency, high network throughput, or both.
+- DynamoDB does not have maximum write throughput but needs request if 10000+
+- You should use IOPS over standard RDS storage if you have batch-oriented workloads
+- One-time payment for RIs are never refundable
+- When IAM user is deleted, password, access key, all inline policies, managed policies, and MFA devices will be deleted.
+- IAM features
+    - Granular permission
+    - Secure access to AWS resources for apps that run on EC2
+    - MFA
+    - Identity federation
+    - Identity information for assurance
+    - PCI DSS Compliance
+    - Eventually consistent
+    - Free to User
+- Maximum response time for Business level Premium Support case
+    - General guidance: 24 hrs
+    - System impaired: 12 hours
+    - Production system impaired: 4 hours
+    - Production system down: 1 hour
+- You cannot delete a snapshot of the root device of an EBS volume used by a registered AMI.
+- SNS topic creation => ARN creation
+- Private IP address remains associated with the network interface when the instance is stopped / restarted but release then terminated.
+- You can encrypt connection between application and DB instance wth SSL
+- CloudFormation : model & set up resources for AWS resources to spend less time managing the resources and focus on applications. Create a template that describe all resources that you want and CloudFormation will provision & configure the resources.
+- Amazon EFS : Scalable file storage for use with Amazon EC2. Common data source / workloads / application running on multiple instances
+- Reserved Intances are available for Multi-AZ deployements, for all instance types
+- Choose Provisioned IOPS over Standard RDS storage if you use production online transaction processing (OLTP) workloads
+- You cannot use standby for read / write operation when running DB as a Multi-AZ deployment
+- IAM permissions : Identity-based & Resource-based. 
+- Auto Scaling determines whether there are instances in multiple Availability Zones. If so, it selects the Availability Zone with the most instances and at least one instance that is not protected from scale in.
+- EC2 instance in a VPC with an associated Elastic IP is stopped and started => All data on instance-store devices is lost & underlying host for the instance is changed
+- SWF : build, run, and scale background jobs that have parallel / sequential steps. Fully managed state tracker & tast coordinator
+    - video encoding, data center migration, product catalogs with human workers
