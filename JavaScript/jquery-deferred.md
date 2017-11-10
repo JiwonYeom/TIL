@@ -13,8 +13,8 @@
 // create user pool
 function createUserPool(){
     var poolData = {
-        UserPoolId : 'ap-northeast-2_VtEfTuELM',
-        ClientId : '6h3v1q779m5lpgr2m1cnt2vvhi'
+        UserPoolId : '[userpool id]',
+        ClientId : '[client id]'
     };
     var userPool = new AWSCognito.CognitoIdentityServiceProvider.CognitoUserPool(poolData);
     return userPool;
