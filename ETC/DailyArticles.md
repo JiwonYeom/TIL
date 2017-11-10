@@ -34,3 +34,6 @@ https://medium.com/@jwyeom63/%EC%84%B8%EB%B6%84%ED%99%94-granular-%EC%95%A0%ED%9
 - The Web Fundamentals Gap :
 https://codeburst.io/the-web-fundamentals-gap-bb8f7fba29c6
 
+#### 20171023
+- :star2: Translated `A Beginner-Friendly Introduction to Containers, VMs and Docker` : 
+https://medium.freecodecamp.org/a-beginner-friendly-introduction-to-containers-vms-and-docker-79a9e3e119b
