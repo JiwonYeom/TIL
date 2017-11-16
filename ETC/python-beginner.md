@@ -8,3 +8,4 @@
 * Python Nested Classes : can be useful when the inner class is never used outside the definition of the outer class. ex) metaclasses
 ref: https://stackoverflow.com/questions/78799/is-there-a-benefit-to-defining-a-class-inside-another-class-in-python
 
+* `self` as a parameter means the instance itself.

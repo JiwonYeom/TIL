@@ -56,13 +56,13 @@ Host: [Host address]
     - browser needs to only confirm if the data is unchanged.
     - If the hash is not matched = invalid signature
 - TLS process step-by-step
-    - server sends ou the the certificate (public key, domain, and signature)
+    - server sends out the the certificate (public key, domain, and signature)
     - browsers have their public key, so they can easily check if the signature is valid.
 - Mixed content: when you open a website that is supposed to be delivered through HTTPS but resources are from non-TLS secured origins. (Ex.jquery from non-TLS CDN)
 
 ### HTTP2
 - request numbers have been increasing fast in past years.
-- Headers tend to be repetitive. HTTP2 provides header compression.b 
+- Headers tend to be repetitive. HTTP2 provides header compression.
 - HTTP2 also supports better security 
 - How?
     - Give up human-readable headers.
@@ -71,7 +71,6 @@ Host: [Host address]
         - Streams split up into frames and optimizes usage of the connection.
         - Uncompressed header data -> compressed with key.zip + All stremas share the compressor 
         - Compressor will recognize a header that has already been sent before and sends a reference instead.
-        - ex) Cookies.
 
 ### Transition to HTTP2
 - Minifying is okay, but concatenating / combining files into one should be considered carefully since it will make caching inefficient.
@@ -84,7 +83,7 @@ Host: [Host address]
 - do not mix HTTP and HTTPS URLs
 - Cross-Origin Fetch Requests
     - Might be able to fetch responses, but won't be able to read them
-- Browser-enforced
+- Security policies are Browser-enforced
 - CORS: Cross Origin Resource Sharing
     - JSONP: returns a script containing the data. JSONP APIs expect to accept **function name** as its query parameter.
     - CORS headers allow servers to specify set of allowed origins. If the request referrer header is on the allow list, it can read and use the data.
