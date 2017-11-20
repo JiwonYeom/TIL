@@ -4,7 +4,7 @@ Reference: https://www.udacity.com/course/software-development-process--ud805
 ### Fundamental patterns
 * Delegation pattern
 * Interface pattern
-* Proxy pattern
+* Proxy pattern : surrogate controls access to an object (masks some of the functionality of the object)
 
 ### Creational patterns
 * Abstract factory pattern
@@ -19,26 +19,25 @@ Reference: https://www.udacity.com/course/software-development-process--ud805
 ### Structural patterns
 * Adapter pattern
 * Bridge pattern
-* Decorator pattern
+* Decorator pattern : wrapper that adds functionality to a class (stackable)
 
 ### Behavioral patterns
 * Chain of responsibility
-* Iterator
-* Observer 
+* Iterator : access elemens of a collection without knowing underlying representation
+* Observer : notify dependents when object changes
 * State
 * Strategy
     * Intent: allow switching between different algorithms to finish certain task
     * applicable for different variants of algorithms
     * many related classes that differ only in their behavior
-
-* Visitor
+* Visitor : separating an algorithm from an object structure (without modifying the structure)
 
 ### Concurrency patterns
 * Active Object
 * Monitor object 
 * Thread Pool pattern
 
-## Pattern Format(Subset)
+### Pattern Format(Subset)
 * **Name**
 * **Intent**
 * Motivation
@@ -48,3 +47,5 @@ Reference: https://www.udacity.com/course/software-development-process--ud805
 * Implementation
 * Sample Code
 * Related patterns
+
+### Negative Design patterns (Anti-patterns / bad smells)
