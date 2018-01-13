@@ -58,3 +58,26 @@ let arr = [10,20,30,40];
 Math.max(arr);  //error
 Math.max(...arr);   //works
 ```
+
+* `super()`
+Needed when calling the super class methods/properties.
+```javascript
+class Animal {
+    constructor() {
+        this.needs = ['food','sleep','home'];        
+    }
+	printNeed() {
+            console.log(this.needs[0]);
+    }
+}
+
+class Dog extends Animal {
+    constructor() {
+        super();    // needed
+        this.name = 'Dog';
+    }
+	printName() {
+            console.log(this.name);
+    }
+}
+```
