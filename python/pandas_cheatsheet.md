@@ -21,3 +21,9 @@
 `df.groupby(by=["b"], dropna=False).sum()`
 
 `sales.groupby("type")["weekly_sales"].agg([np.min,np.max, np.mean, np.median])`
+
+- `loc` and `iloc`
+    - `loc`: Label based, have to specify name of the rows and columns that we need to filter out
+    - `iloc`: Integer index based. specify rows/columns by integer index.
+
+reference: https://stackoverflow.com/a/43968774
