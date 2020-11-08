@@ -49,7 +49,17 @@ print(temperatures_ind["2010-08":"2011-02"])
 
 `df.sample(n)`
 
-- How to do Ani-join
+- merges (table join)
+
+`.merge(on='id', how='left'/'right'/'outer', right_on / left_on, suffixes = ['left_suffix','right_suffix]`
+
+    - Left Join/ Right Join returns same or more rows for one-to-many relationship than from one-to-one relationship
+    - Self Join can be used when:
+        - Hierarchical Relationships
+        - Sequential Relationships
+        - Graph Data (Network of people/friends/nodes..)
+
+- How to do Anti-join
 
 ```python
 # Merge employees and top_cust
