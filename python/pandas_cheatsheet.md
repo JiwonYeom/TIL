@@ -44,3 +44,21 @@ print(temperatures_ind.loc["2010":"2011"])
 # Use .loc[] to subset temperatures_ind for rows from Aug 2010 to Feb 2011
 print(temperatures_ind["2010-08":"2011-02"])
 ```
+
+- Random Sampling
+
+`df.sample(n)`
+
+- How to do Ani-join
+
+```python
+# Merge employees and top_cust
+empl_cust = employees.merge(top_cust, on='srid', 
+                                 how='left', indicator=True)
+
+# Select the srid column where _merge is left_only
+srid_list = empl_cust.loc[empl_cust['_merge'] == 'left_only', 'srid']
+
+# Get employees not working with top customers
+print(employees[employees['srid'].isin(srid_list)])
+```
