@@ -83,3 +83,9 @@ inv_jul_thr_sep = pd.concat([inv_jul, inv_aug, inv_sep],
 # Group the invoices by the index keys and find avg of the total column
 avg_inv_by_month = inv_jul_thr_sep.groupby(level=0).agg({'total':'mean'})
 ```
+
+- Verifying Integrity when concat/merge
+
+`artists.merge(albums, on='artid', validate='one_to_many)`
+
+    - Can check if data is clean & will be combined the way we expect them to be
