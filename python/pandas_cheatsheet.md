@@ -89,3 +89,7 @@ avg_inv_by_month = inv_jul_thr_sep.groupby(level=0).agg({'total':'mean'})
 `artists.merge(albums, on='artid', validate='one_to_many)`
 
     - Can check if data is clean & will be combined the way we expect them to be
+
+- `merge_ordered` method
+    - When mergin ordered data / time series
+    - When missing values need to be filled up (ex.machine learning)
