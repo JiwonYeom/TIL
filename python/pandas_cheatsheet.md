@@ -31,17 +31,13 @@ reference: https://stackoverflow.com/a/43968774
 - Time Series slicing
 
 ```python
-# Use Boolean conditions to subset temperatures for rows in 2010 and 2011
 temperatures_bool = temperatures[(temperatures["date"] >= "2010-01-01") & (temperatures["date"] <= "2011-12-31")]
 print(temperatures_bool)
 
-# Set date as an index and sort the index
 temperatures_ind = temperatures.set_index("date").sort_index()
 
-# Use .loc[] to subset temperatures_ind for rows in 2010 and 2011
 print(temperatures_ind.loc["2010":"2011"])
 
-# Use .loc[] to subset temperatures_ind for rows from Aug 2010 to Feb 2011
 print(temperatures_ind["2010-08":"2011-02"])
 ```
 
@@ -62,25 +58,20 @@ print(temperatures_ind["2010-08":"2011-02"])
 - How to do Anti-join
 
 ```python
-# Merge employees and top_cust
 empl_cust = employees.merge(top_cust, on='srid', 
                                  how='left', indicator=True)
 
-# Select the srid column where _merge is left_only
 srid_list = empl_cust.loc[empl_cust['_merge'] == 'left_only', 'srid']
 
-# Get employees not working with top customers
 print(employees[employees['srid'].isin(srid_list)])
 ```
 
 - How to add keys when concat
 
 ```python
-# Concatenate the tables and add keys
 inv_jul_thr_sep = pd.concat([inv_jul, inv_aug, inv_sep], 
                             keys=['7Jul','8Aug','9Sep'])
 
-# Group the invoices by the index keys and find avg of the total column
 avg_inv_by_month = inv_jul_thr_sep.groupby(level=0).agg({'total':'mean'})
 ```
 
@@ -93,3 +84,19 @@ avg_inv_by_month = inv_jul_thr_sep.groupby(level=0).agg({'total':'mean'})
 - `merge_ordered` method
     - When mergin ordered data / time series
     - When missing values need to be filled up (ex.machine learning)
+
+- `merge_ordered` and ffill
+
+```python
+gdp_sp500 = pd.merge_ordered(gdp, sp500, left_on='year', right_on='date', 
+                             how='left',  fill_method='ffill')
+```
+
+- When want to find correlation with pandas
+
+```python
+
+gdp_returns = gdp_sp500[['gdp','returns']]
+
+print(gdp_returns.corr())
+```
