@@ -90,6 +90,9 @@ avg_inv_by_month = inv_jul_thr_sep.groupby(level=0).agg({'total':'mean'})
 ```python
 gdp_sp500 = pd.merge_ordered(gdp, sp500, left_on='year', right_on='date', 
                              how='left',  fill_method='ffill')
+                             
+pd.merge_ordered(gdp,pop,on=['country','date'],fill_method='ffill')
+# order of multiple on condition matters, as that will change which one will be prioritized to be ordered
 ```
 
 - When want to find correlation with pandas
