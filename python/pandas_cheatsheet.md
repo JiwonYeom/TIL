@@ -103,3 +103,18 @@ gdp_returns = gdp_sp500[['gdp','returns']]
 
 print(gdp_returns.corr())
 ```
+
+- merge_asof(): matches to the closest value if the exact match cannot be found
+    - data sampled from a process
+    - developing a training set ( when you don't want to show any data after certain timestamp)
+
+- merge_asof & plotting
+
+```python
+gdp_recession = pd.merge_asof(gdp,recession,on='date')
+
+is_recession = ['r' if s=='recession' else 'g' for s in gdp_recession['econ_status']]
+
+gdp_recession.plot(kind='bar', y='gdp', x='date', color=is_recession, rot=90)
+plt.show()
+```
