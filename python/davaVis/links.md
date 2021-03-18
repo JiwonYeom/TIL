@@ -1,0 +1,3 @@
+- https://www.kaggle.com/residentmario/welcome-to-data-visualization
+- https://www.kaggle.com/kanncaa1/statistical-learning-tutorial-for-beginners
+- https://ammar-alyousfi.com/2020/youtube-trending-videos-analysis-2019-us?src=kgl
