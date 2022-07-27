@@ -17,3 +17,5 @@ for i in range(3000):
 confidence_interval = pd.Series(boot_mean_diff).quantile([0.025, 0.975])
 confidence_interval
 ```
+
+- `category` data type uses less memory and runs faster
